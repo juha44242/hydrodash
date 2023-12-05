@@ -1,7 +1,15 @@
 :root {
-    background-color: #ffffff; 
-    color: #008559;
-    color: #D7ead9;
-    color: #f2e1f0;
-    color: #000000;
+    --bg-color: #ffffff;
+    --text-color: #000000; 
+    --one-color: #008559;
+    --two-color: #D7ead9;
+    --three-color: #f2e1f0;    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
