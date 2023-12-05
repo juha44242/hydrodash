@@ -13,3 +13,25 @@
     list-style: none;
     text-decoration: none;
 }
+
+
+@font-face {
+    font-family: 'Orgon';
+    src: url('Orgon-Bold.otf') format('opentype'),
+         url('Orgon-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Orgon';
+    src: url('Orgon-ExtraBold.otf') format('opentype'),
+         url('Orgon-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* Adjust the font weight as needed */
+}
+
+@font-face {
+    font-family: 'Orgon';
+    src: url('Orgon-Regular.otf') format('opentype'),
+         url('Orgon-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
