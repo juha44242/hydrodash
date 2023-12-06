@@ -58,13 +58,22 @@
 .sidebar-menu li {
     width: 100%;
     margin-bottom: 1.7rem;
-    padding-left: 2rem; 
+    padding-left: 1rem; 
 }
 
 .sidebar-menu a {
+    padding-left: 1rem;
     display: block;
     color: var(--bg-color);
     font-size: 1.1rem;
+}
+
+.sidebar-menu a.active {
+    background-color: var(--bg-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--one-color);
+    border-radius: 5px 0px 0px 5px;
 }
 
 .sidebar-menu a span:first-child {
