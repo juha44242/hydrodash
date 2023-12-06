@@ -37,7 +37,7 @@
 }
 
 .sidebar {
-    width:205px;
+    width:215px;
     position: fixed;
     left: 0;
     top: 0;
@@ -45,6 +45,33 @@
     background-color: var(--one-color) ;
 }
 
+.sidebar-brand  {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+}
+
+.sidebar-brand span {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 2rem; 
+}
+
+.sidebar-menu a {
+    display: block;
+    color: var(--bg-color);
+    font-size: 1.1rem;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
 .main-content {
-    margin-left: 205px;
+    margin-left: 215px;
 }
