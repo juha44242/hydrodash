@@ -42,11 +42,11 @@ header {
     height: 105px;
 }
 
-header.img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
 
 
@@ -59,12 +59,12 @@ header.img {
     background-color: var(--one-color) ;
 }
 
-.sidebar-brand  {
+.sidebar-profil  {
     height: 90px;
     padding: 2rem 1rem 1rem 2rem;
 }
 
-.sidebar-brand span {
+.sidebar-profil span {
     display: inline-block;
     padding-right: 3rem;
 }
