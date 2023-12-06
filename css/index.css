@@ -55,6 +55,12 @@
     padding-right: 3rem;
 }
 
+.profil-img {
+    display: inline-block;
+    align-items: center;
+    padding: 2rem 1.5rem 1.5rem 2rem;
+}
+
 .sidebar-menu li {
     width: 100%;
     margin-bottom: 1.7rem;
