@@ -65,14 +65,11 @@ header {
 }
 
 .sidebar-profil span {
-    display: inline-block;
-    padding-right: 3rem;
-}
-
-.profil-img {
-    display: inline-block;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
     align-items: center;
-    padding: 2rem 1.5rem 1.5rem 2rem;
+
 }
 
 .sidebar-menu li {
