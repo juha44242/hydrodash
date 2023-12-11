@@ -102,4 +102,20 @@ h1 {
     padding-right: 1rem;
 }
 
+.hero-img {
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 325px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-profil {
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
 
