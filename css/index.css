@@ -46,6 +46,8 @@ h1 {
     display: flex;
     text-align: center;
     justify-content: center;
+    padding-left: 165px;
+    padding-right: 35px;
 }
 
 .sidebar {
@@ -123,8 +125,10 @@ h1 {
     position: absolute;
     top: 30%;
     left: 55%;
+    padding-bottom: 15px;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 40px;
 }
 
 .flex-container {
