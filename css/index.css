@@ -42,11 +42,10 @@ header {
     height: 105px;
 }
 
-.logo {
+h1 {
     display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    position: absolute;
 }
 
 
@@ -56,20 +55,22 @@ header {
     left: 0;
     top: 105px;
     height: 100%;
-    background-color: var(--one-color) ;
+    background-color: var(--one-color);
 }
 
 .sidebar-profil  {
     height: 90px;
     padding: 2rem 1rem 1rem 2rem;
+    margin-bottom: 5rem;
 }
 
-.sidebar-profil span {
-    display: flex;
+.sidebar-profil img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
     margin-right: auto;
     margin-left: auto;
-    align-items: center;
-
+    border-radius: 50%;
 }
 
 .sidebar-menu li {
@@ -81,8 +82,8 @@ header {
 }
 
 .sidebar-menu a {
-    padding-left: 2rem;
     display: block;
+    padding-left: 2rem;
     margin-bottom: 2rem;
     color: var(--bg-color);
     font-size: 1.1rem;
