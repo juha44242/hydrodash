@@ -120,9 +120,9 @@ h1 {
 }
 
 .btn {
-    background-color: #04AA6D; /* Green */
+    background-color: var(--one-color);
     border: none;
-    color: white;
+    color: var(--bg-color);
     padding-left: 250px;
     text-align: center;
     text-decoration: none;
