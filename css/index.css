@@ -130,17 +130,19 @@ h1 {
 .flex-container {
     display: flex;
     justify-content: center;
-    
+    padding-top: 25px;
+    padding-left: 15%;
   }
   
   .flex-container > div {
     background-color: var(--one-color);
+    border-radius: 5px 5px 5px 5px;
     color: white;
     width: 100px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
 .search-container {
