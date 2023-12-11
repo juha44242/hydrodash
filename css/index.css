@@ -146,6 +146,12 @@ h1 {
     font-size: 16px;
   }
 
+.flex-container span {
+    color: var(--bg-color);
+    margin: 5px;
+    font-size: 1.1rem;
+}
+
 .search-container {
     position: relative;
 }
