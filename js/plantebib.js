@@ -1,5 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
 
-const imageData = [
+    const imageData = [
     { src: 'img/carrot.jpeg', alt: 'gulerød', text: 'Gulerød' },
     { src: 'img/corriander.jpeg', alt: 'koriander', text: 'Koriander' },
   ];
@@ -46,12 +47,14 @@ const imageData = [
     document.getElementById('myModal').style.display = 'none';
   }
   
-  
+
   window.onclick = function (event) {
     if (event.target === document.getElementById('myModal')) {
       closeModal();
     }
   };
+
+});
   
   
   
