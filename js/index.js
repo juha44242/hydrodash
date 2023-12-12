@@ -17,7 +17,7 @@ function closeNav() {
     } 
     
     else if (time < 18) {
-      greeting = "Good day";
+      greeting = "Goddag";
     } 
     
     else {
@@ -25,4 +25,6 @@ function closeNav() {
     }
     
     document.getElementById("hallo").innerHTML = greeting + " Camilla Andersen";
+
+
  

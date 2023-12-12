@@ -1,17 +1,3 @@
-// Hent modal-elementet
-let modal = document.getElementById('simpleModal');
-// Hent knappen for at åbne modalen
-let modalBtn = document.getElementById('modalBtn');
-// Hent luk-knappen
-let closeBtn = document.getElementsByClassName('closeBtn')[0];
-
-// Lyt efter klik på åbn-knap
-modalBtn.addEventListener('click', openModal);
-// Lyt efter klik på luk-knap
-closeBtn.addEventListener('click', closeModal);
-// Lyt efter klik uden for modalen
-window.addEventListener('click', outsideClick);
-
 // Funktion til at åbne modalen
 function openModal() {
     modal.style.display = 'block';
@@ -35,8 +21,20 @@ function handleLogin() {
     var username = document.getElementById('emailInput').value;
     var password = document.getElementById('passwordInput').value;
 
-    // Tjek om brugernavn er den ønskede e-mail
-    if (username === 'din@email.com') {
+    // Et eksempel på brug af en array
+    const allowedEmails = ["tiyam@gmail.com", "hamdi@gmail.com", "lina@gmail.com"];
+
+    // Et eksempel på brug af en løkke
+    let erFundet = false;
+    for (let i = 0; i < allowedEmails.length; i++) {
+        if (allowedEmails[i] === username) {
+            erFundet = true;
+            break;
+        }
+    }
+
+    // Tjek om brugernavn er i den tilladte e-mail-array
+    if (erFundet) {
         // Vis besked om succesfuld login
         alert('Du er logget ind!');
     } else {
@@ -48,5 +46,5 @@ function handleLogin() {
 // Lyt efter klik på Log ind-knappen
 document.getElementById('loginBtn').addEventListener('click', function() {
     handleLogin();
+    console.log("Log ind-knap klikket!");
 });
-
