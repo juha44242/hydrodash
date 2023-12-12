@@ -17,7 +17,7 @@ function closeNav() {
     } 
     
     else if (time < 18) {
-      greeting = "Good day";
+      greeting = "Goddag";
     } 
     
     else {
