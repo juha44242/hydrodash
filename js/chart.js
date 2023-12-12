@@ -70,7 +70,7 @@ const options = {
         },
     ],
     title: {
-        text: 'Core Voltage',
+        text: 'Voltage',
     },
 };
 
