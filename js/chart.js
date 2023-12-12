@@ -1,96 +1,71 @@
-const xValues = [50,60,70,80,90,100,110,120,130,140,150];
-const yValues = [7,8,8,9,9,9,10,11,14,14,15];
-
-new Chart("line"), {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "rgba(0,0,255,1.0)",
-      borderColor: "rgba(0,0,255,0.1)",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min: 6, max:16}}],
-    }
-  }
-};
-
-
-// line chart //
-
-var lastTime = new Date('12 Dec 2023 08:25:00 GMT').getTime();
-var data = [];
-
-function getData() {
-    data.shift();
-
-    while (data.length < 20) {
-        data.push({
-            time: new Date((lastTime += 1000)),
-            voltage: 1.1 + Math.random() / 2,
-        });
-    }
-
-    return data;
-}
-
-const options = {
-    container: document.getElementById('myChart'),
-    data: getData(),
-    series: [
-        {
-            xKey: 'time',
-            yKey: 'voltage',
-        },
-    ],
-    axes: [
-        {
-            type: 'time',
-            position: 'bottom',
-            nice: false,
-            tick: {
-                interval: agCharts.time.second.every(5),
-            },
-            label: {
-                format: '%H:%M:%S',
-            },
-        },
-        {
-            type: 'number',
-            position: 'left',
-            label: {
-                format: '#{.2f}V',
-            },
-        },
-    ],
-    title: {
-        text: 'Voltage',
+const ctx = document.getElementById('barchart').getContext('2d');
+const barchart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['luftfugtighed', 'Vand PH', 'kuldioxid', 'strøm', 'vand ledningsevne', ],
+        datasets: [{
+            label: 'Dashboard Hydrovertic',
+            data: [2, 19, 13, 25, 2,],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+            ],
+            borderWidth: 1
+        }]
     },
-};
-
-const chart = agCharts.AgCharts.create(options);
-var updating = false;
-
-function startUpdates() {
-    if (updating) {
-        return;
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
     }
+});
 
-    updating = true;
-    //@ts-ignore
-    this.update();
-    //@ts-ignore
-    setInterval(this.update, 500);
-}
 
-/** inScope */
-function update() {
-    options.data = getData();
-    agCharts.AgCharts.update(chart, options);
-}
+
+
+const ctx2 = document.getElementById('doughnut').getContext('2d');
+const doughnut = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+        labels: ['luftfugtighed', 'Vand PH', 'kuldioxid', 'strøm', 'vand ledningsevne'],
+        datasets: [{
+            label: '# data',
+            data: [12, 19, 10, 5, 8,],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
