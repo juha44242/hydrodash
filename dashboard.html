@@ -45,65 +45,18 @@
         </div>
     </div>
         
-    <main>
-
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Graf</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#home">Bar</a>
-              <a href="#about">histogram</a>
-              <a href="#contact">line</a>
+    
+    <div class="container">
+            <div class="chart">
+                <canvas id="barchart" width="300" height="300"></canvas>
             </div>
-
-        </div>
-
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Interval</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#home">15 minutter</a>
-              <a href="#about">30 minutter</a>
-              <a href="#contact">1 time</a>
-              <a href=""> 1 dag</a>
-              <a href=""> 1 uge</a>
+            <div class="chart">
+                <canvas id="doughnut" width="300" height="300"></canvas>v
             </div>
-
-        </div>
-
-            <div>
-                <div class="simple-bar-chart">
-          
-                    <div class="item" style="--clr: #5EB344; --val: 80">
-                      <div class="label">Luftfugtighed</div>
-                      <div class="value">80%</div>
-                    </div>
-                    
-                    <div class="item" style="--clr: #FCB72A; --val: 50">
-                      <div class="label">Strøm</div>
-                      <div class="value">50%</div>
-                    </div>
-                    
-                    <div class="item" style="--clr: #F8821A; --val: 100">
-                      <div class="label">vandledningsevne</div>
-                      <div class="value">100%</div>
-                    </div>
-                    
-                    <div class="item" style="--clr: #E0393E; --val: 15">
-                      <div class="label">kuldioxid</div>
-                      <div class="value">15%</div>
-                    </div>
-                    
-                    <div class="item" style="--clr: #069CDB; --val: 90">
-                      <div class="label">Vands HP</div>
-                      <div class="value">90%</div>
-                    </div>
-                  </div>
-                  
-          
-                  <canvas id="line-chart" width="800" height="450"></canvas>
-          
-            </div>
-   
-        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="charts.js"></script>
+    <script src="charts.js"></script>
     
 
     </main>
