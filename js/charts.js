@@ -2,7 +2,7 @@ const ctx = document.getElementById('barchart').getContext('2d');
 const barchart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['luftfugtighed', 'Vand PH', 'kuldioxid', 'strøm', 'vand ledningsevne', ],
+        labels: ['Luftfugtighed', 'Vand PH', 'Kuldioxid', 'Strøm', 'Vandledningsevne', ],
         datasets: [{
             label: 'Dashboard Hydrovertic',
             data: [2, 19, 13, 25, 2,],
