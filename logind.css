@@ -7,7 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    background-color: white;
+    background-color: #008559;
 }
 
 .wave{
@@ -17,6 +17,7 @@ body{
 	height: 100%;
 	z-index: -1;
 }
+
 
 .container{
     width: 65vw;
@@ -49,23 +50,25 @@ form{
 }
 
 .login-content img{
-    height: 100px;
+    height: 50px;
 }
 
 .login-content h2{
 	margin: 15px 0;
-	color: #333;
+	color: #ffffff;
 	text-transform: uppercase;
-	font-size: 2.9rem;
+	font-size: 25px;
+
 }
 
 .login-content .input-div{
 	position: relative;
     display: grid;
     grid-template-columns: 7% 93%;
-    margin: 25px 0;
+    margin: 10px 0;
     padding: 5px 0;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 2px solid #ffffff;
+    text-align: left;
 }
 
 .login-content .input-div.one{
@@ -119,28 +122,28 @@ form{
 
 .input-div > div > input{
 	position: absolute;
-	left: 0;
+	left: -10%;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	height: 150%;
 	border: none;
 	outline: none;
 	background: none;
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
-	color: #555;
+	color: #ffffff;
 	font-family: 'poppins', sans-serif;
 }
 
 .input-div.pass{
-	margin-bottom: 4px;
+	margin-bottom: 10px;
 }
 
 a{
 	display: block;
 	text-align: right;
 	text-decoration: none;
-	color: #999;
+	color: #ffffff;
 	font-size: 0.9rem;
 	transition: .3s;
 }
@@ -153,7 +156,7 @@ a:hover{
 	display: block;
 	width: 100%;
 	height: 50px;
-	border-radius: 5px;
+	border-radius: 25px;
 	outline: none;
 	border: none;
 	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
