@@ -56,49 +56,51 @@
     </div>
     
 
-    <div class="responsive" id="gallery1">
-        <div class="gallery" onclick="showPopup('Cinque Terre', 'img_5terre.jpg')">
-          <a target="_blank" href="img/carrot.jpeg">
-            <img src="img/carrot.jpeg" alt="Cinque Terre">
-          </a>
-          <div class="desc">Gulerød</div>
-        </div>
-      </div>
-      
-      <div class="responsive" id="gallery1">
-        <div class="gallery" onclick="showPopup('Forest', 'img_forest.jpg')">
-          <a target="_blank" href="img/corriander.jpeg">
-            <img src="img/corriander.jpeg" alt="Forest">
-          </a>
-          <div class="desc">koriander</div>
-        </div>
-      </div>
-      
-      <div class="responsive" id="gallery1">
-        <div class="gallery" onclick="showPopup('gulerød', 'img_lights.jpg')">
-          <a target="_blank" href="img/carrot.jpeg">
-            <img src="img/carrot.jpeg" alt="gulerød">
-          </a>
-          <div class="desc">Gulerød</div>
-        </div>
-      </div>
-      
-      <div class="responsive" id="gallery1">
-        <div class="gallery" onclick="showPopup('Forest', 'img_forest.jpg')">
-          <a target="_blank" href="img/corriander.jpeg">
-            <img src="img/corriander.jpeg" alt="Forest">
-          </a>
-          <div class="desc">koriander</div>
-        </div>
-      </div>
-      
-      <div class="clearfix"></div>
 
-      <div class="popup" id="popup">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <img id="popupImage" src="" alt="Popup Image">
-        <div class="desc" id="popupDesc"></div>
-      </div>
+<div class="gallery">
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/corriander.jpeg" alt="koriander">
+            <div class="image-text">Koriander</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/corriander.jpeg" alt="Image 4">
+            <div class="image-text">Koriander</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/corriander.jpeg" alt="Image 6">
+            <div class="image-text">Koriander</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/corriander.jpeg" alt="Image 8">
+            <div class="image-text">Koriander</div>
+        </div>
+    </div>
+
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
 
 
 
