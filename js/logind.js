@@ -22,7 +22,7 @@ function handleLogin() {
     var password = document.getElementById('passwordInput').value;
 
     // Et eksempel på brug af en array
-    const allowedEmails = ["din@email.com", "andet@email.com", "tredje@email.com"];
+    const allowedEmails = ["tiyam@gmail.com", "hamdi@gmail.com", "lina@gmail.com"];
 
     // Et eksempel på brug af en løkke
     let erFundet = false;
