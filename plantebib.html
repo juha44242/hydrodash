@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="css/plantebib.css">
         <link rel="stylesheet" href="css/index.css">        
         <script src="js/index.js" defer></script> 
+        <script src="js/plantebib.js"></script>
         <title>Hydrovertic-dashboard</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.PNG">
+
 
         <title>Search Bar</title>
 
@@ -16,11 +18,13 @@
 <body>
     <header>
         <h1><img src="img/headerlogo.png" width="275px" height="75px" alt="det er hydrovertics logo"></h1>
-        <div class="search-container">
-        <span class="search-icon">🔍</span>
-        <input type="text" class="search-bar" placeholder="Search...">
-    </div>
     </header>
+
+    <p> Plante Bibliotek </p>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder=" 🔍 Søg i Plante Bibliotek">
+    </div>
     
     <div class="sidebar">
         <div class="sidebar-profil">
@@ -50,6 +54,57 @@
             </ul>
         </div>
     </div>
+    
+
+
+<div class="gallery">
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/corriander.jpeg" alt="koriander">
+            <div class="image-text">Koriander</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/corriander.jpeg" alt="Image 4">
+            <div class="image-text">Koriander</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/corriander.jpeg" alt="Image 6">
+            <div class="image-text">Koriander</div>
+        </div>
+        <div class="gallery-item" onclick="openModal('Caption 1')">
+            <img src="img/carrot.jpeg" alt="gulerød">
+            <div class="image-text">Gulerød</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/corriander.jpeg" alt="Image 8">
+            <div class="image-text">Koriander</div>
+        </div>
+    </div>
+
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <p id="modalText"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+      
 
 </body>
 </html>      
