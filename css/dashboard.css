@@ -102,18 +102,3 @@ h1 {
     font-size: 1.5rem;
     padding-right: 1rem;
 }
-
-
-.container {
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    gap: 200px;
-}
-.chart {
-    padding: 2rem;
-    border: 1px solid #008559;
-    border-radius: 1rem;
-    background: #d7ead9;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-}
