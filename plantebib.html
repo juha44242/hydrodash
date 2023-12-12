@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="css/plantebib.css">
         <link rel="stylesheet" href="css/index.css">        
         <script src="js/index.js" defer></script> 
+        <script src="js/plantebib.js"></script>
         <title>Hydrovertic-dashboard</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.PNG">
+
 
         <title>Search Bar</title>
 
@@ -52,6 +54,55 @@
             </ul>
         </div>
     </div>
+    
+
+    <div class="responsive" id="gallery1">
+        <div class="gallery" onclick="showPopup('Cinque Terre', 'img_5terre.jpg')">
+          <a target="_blank" href="img/carrot.jpeg">
+            <img src="img/carrot.jpeg" alt="Cinque Terre">
+          </a>
+          <div class="desc">Gulerød</div>
+        </div>
+      </div>
+      
+      <div class="responsive" id="gallery1">
+        <div class="gallery" onclick="showPopup('Forest', 'img_forest.jpg')">
+          <a target="_blank" href="img/corriander.jpeg">
+            <img src="img/corriander.jpeg" alt="Forest">
+          </a>
+          <div class="desc">koriander</div>
+        </div>
+      </div>
+      
+      <div class="responsive" id="gallery1">
+        <div class="gallery" onclick="showPopup('gulerød', 'img_lights.jpg')">
+          <a target="_blank" href="img/carrot.jpeg">
+            <img src="img/carrot.jpeg" alt="gulerød">
+          </a>
+          <div class="desc">Gulerød</div>
+        </div>
+      </div>
+      
+      <div class="responsive" id="gallery1">
+        <div class="gallery" onclick="showPopup('Forest', 'img_forest.jpg')">
+          <a target="_blank" href="img/corriander.jpeg">
+            <img src="img/corriander.jpeg" alt="Forest">
+          </a>
+          <div class="desc">koriander</div>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+
+      <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popupImage" src="" alt="Popup Image">
+        <div class="desc" id="popupDesc"></div>
+      </div>
+
+
+
+      
 
 </body>
 </html>      
