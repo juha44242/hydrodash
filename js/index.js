@@ -8,12 +8,12 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 
-document.addEventListener("DOMContentLoaded"), function() {
+
     const time = new Date().getHours();
     let greeting;
     
     if (time < 10) {
-      greeting = "Good morning";
+      greeting = "Godmorgen";
     } 
     
     else if (time < 18) {
@@ -25,4 +25,4 @@ document.addEventListener("DOMContentLoaded"), function() {
     }
     
     document.getElementById("hallo").innerHTML = greeting + " Camilla Andersen";
-  };
+ 
