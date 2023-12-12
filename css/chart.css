@@ -83,7 +83,7 @@
     --line-count: 10;
     --line-color: currentcolor;
     --line-opacity: 0.25;
-    --item-gap: 2%;
+    --item-gap: 10%;
     --item-default-color: #060606;
     
     width: 350px;
