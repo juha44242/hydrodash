@@ -7,20 +7,37 @@
     <title>Beskeder</title>
 </head>
 <body>
-    <div class="hest">
-        <div class="chat-container">
-            <div class="chat-header">
-                <h2>Iris</h2>
-            </div>
-            <div class="chat-messages" id="chat-messages">
-            </div>
-            <div class="chat-input">
-                <input type="text" id="messageInput" placeholder="Type a message...">
-                <button onclick="sendMessage()">Send</button>
+    <div class="wrapper">
+        <div class="contacts">
+            <div class="contact" onclick="selectProfile('Jakob')"><img src="jacob-kopi.png" alt=""> Jakob </div>
+            <div class="contact" onclick="selectProfile('Iris')"> <img src="iris-kopi.PNG" alt=""> Iris </div>
+            <div class="contact" onclick="selectProfile('Maria')"><img src="philip-profile.png" alt=""> Philip </div>
+        </div>
+        <div class="chat-section">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2 id="selectedProfile">Iris</h2>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message received">
+                        <p><span class="sender">Jakob:</span> Hey, hvad så?</p>
+                        <img src="jacob-kopi.png" alt="Received Image">
+                    </div>
+                    <div class="message sent">
+                        <p><span class="sender">Iris:</span> Hej, hvordan går det?</p>
+                        <img src="iris-kopi.PNG" alt="Sent Image">
+                    </div>
+                </div>
+                
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Type a message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
             </div>
         </div>
     </div>
     <script src="chat.js"></script>
 </body>
 </html>
+
 
