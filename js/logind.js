@@ -49,4 +49,9 @@ function handleLogin() {
 document.getElementById('loginBtn').addEventListener('click', function() {
     handleLogin();
 });
+document.getElementById('loginBtn').addEventListener('click', function() {
+    console.log("Log ind-knap klikket!"); // Tjek dette i konsollen
+    handleLogin();
+});
+
 
