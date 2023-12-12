@@ -6,7 +6,7 @@ body {
 
 .wrapper {
     display: flex;
-    background-color: #000000;
+    background-color: #D8EAD9;
 }
 
 .contacts {
@@ -16,6 +16,8 @@ body {
     color: #fff;
     padding: 20px;
     width: auto; 
+    font-weight: bold;
+    color: #070707;
     
 }
 .contacts img {
@@ -24,9 +26,11 @@ body {
 }
 
 .contact {
+    display: flex;
+    justify-content: space-between; /* Add space between image and text */
     cursor: pointer;
     margin-bottom: 10px;
-    
+    align-items: center; 
 }
 
 .chat-section {
@@ -62,7 +66,7 @@ body {
 }
 
 .sent {
-    background-color: #D8EAD9; 
+    background-color: #f0f0f0;
     color: #000;
     text-align: right;
 }

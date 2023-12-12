@@ -8,13 +8,16 @@ function displayProfileImage(profileName) {
     var profileImage = document.getElementById('profileImage');
     switch (profileName) {
         case 'Iris':
-            profileImage.src = 'iris-kopi.PNG';
+            profileImage.src = 'iris-profile.jpg';
             break;
         case 'Jakob':
-            profileImage.src = 'jacob-kopi.png';
+            profileImage.src = 'jakob-profile.jpg';
             break;
-        case 'philip':
+        case 'Philip':
             profileImage.src = 'philip-profile.png';
+            break;
+        case 'Jane':
+            profileImage.src = 'jane_avatar.png';
             break;
         default:
             // Add a default image or handle the case as needed
@@ -49,6 +52,8 @@ function getReceivedMessageForProfile(profile) {
             return "Hi there! How are you doing?";
         case 'Philip':
             return "Hola, ¿cómo estás?";
+        case 'Jane':
+            return "Hey Jane, how's it going?";
         default:
             return "Default received message";
     }
