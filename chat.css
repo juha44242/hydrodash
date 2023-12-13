@@ -12,14 +12,15 @@ body {
 .contacts {
     display: flex;
     flex-direction: column;
-    background-color: #075e54;
+    background-color:#39835D; 
     color: #fff;
     padding: 20px;
-    width: auto; 
-    font-weight: bold;
+    width: auto;
+    font-weight: bold; 
     color: #070707;
-    
+    margin-left: 200px;
 }
+
 .contacts img {
     height: 150px;
     width: auto;
@@ -27,50 +28,45 @@ body {
 
 .contact {
     display: flex;
-    justify-content: space-between; /* Add space between image and text */
+    justify-content: space-between;
     cursor: pointer;
     margin-bottom: 10px;
-    align-items: center; 
+    align-items: center;
 }
+
 
 .chat-section {
     flex: 1;
     padding: 20px;
 }
-
 .chat-container {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
 }
-
 .chat-header {
     background-color: #075e54;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
-
 .chat-messages {
     padding: 10px;
     overflow-y: scroll;
     min-height: 50px; 
     width: auto;
 }
-
 .message {
     margin: 10px;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
 }
-
 .sent {
-    background-color: #f0f0f0;
+    background-color: #D8EAD9; 
     color: #000;
     text-align: right;
 }
-
 .received {
     background-color: #f0f0f0;
     color: #000;
@@ -81,12 +77,10 @@ body {
     width: auto;
 }
 
-
 .sender {
     font-weight: bold;
     color: #3b5998; 
 }
-
 .chat-input {
     display: flex;
     justify-content: space-between;
@@ -94,7 +88,6 @@ body {
     padding: 10px;
     background-color: #f0f0f0;
 }
-
 .chat-input input {
     flex: 1;
     padding: 8px;
@@ -102,7 +95,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .chat-input button {
     background-color: #075e54;
     color: #D8EAD9;
@@ -111,5 +103,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Add more styling as needed */
+
 
 
