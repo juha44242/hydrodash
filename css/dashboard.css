@@ -178,3 +178,57 @@ h1 {
   padding-left: 250px;
   padding-top: 60px;
  }
+
+
+ .sheet-bar {
+  background-color: var(--one-color);
+  display: flex;
+  overflow-x: auto;
+  padding: 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  border: 2px solid white; /* Add this line to set the border */
+  border-radius: 5px; /* Add this line to set border-radius */
+  margin-left: 250px;
+  margin-right: 100px;
+}
+
+.sheet {
+  background-color: var(--two-color);
+  border: 2px solid white;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: ;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  font-family: "orgon", sans-serif;
+}
+
+.sheet:hover {
+  background-color: #e0e0e0;
+}
+
+.add-sheet {
+  background-color: var(--one-color);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  font-family: "orgon", sans-serif;
+  border: 2px solid white;
+  border-radius: 1px;
+
+}
+
+/* New style for content pages */
+.content-page {
+  display: none;
+  padding: 20px;
+  font-family: "orgon", sans-serif;
+}
+
+.active-page {
+  display: block;
+}
