@@ -25,4 +25,6 @@ function closeNav() {
     }
     
     document.getElementById("hallo").innerHTML = greeting + " Camilla Andersen";
+
+
  

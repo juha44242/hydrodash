@@ -252,4 +252,72 @@ h1 {
         padding-left: 15%;
         padding-right: 5%;
     }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+      }
+    
+      li {
+        float: left;
+      }
+    
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+    
+      li:hover a {
+        background-color: white; /* Hover on the menu bar is white */
+        color: black; /* Text color on menu bar hover */
+      }
+    
+      .dropdown {
+        display: inline-block;
+      }
+    
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: green;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+      }
+    
+      .dropdown-content a:hover {
+        background-color: pink; /* Hover on the dropdown items is pink */
+        color: black; /* Text color on dropdown item hover */
+      }
+    
+      .indicator {
+        background-color: white;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: none;
+      }
+    
+      .dropdown:hover .indicator {
+        display: block;
+      }
 }

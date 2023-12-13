@@ -41,10 +41,6 @@
                 </li>
 
                 <li>
-                    <a href="gemte.html"><span class="las la-bookmark"></span><span>Gemte</span></a>
-                </li>
-
-                <li>
                     <a href="plantebib.html" class="active"><span class="las la-book-reader"></span><span>Plante Bibliotek</span></a>
                 </li>
 
@@ -56,54 +52,14 @@
     </div>
     
 
+<!-- Container for the horizontal item list -->
+<div id="item-list-container"></div>
 
-<div class="gallery">
-        <div class="gallery-item" onclick="openModal('Caption 1')">
-            <img src="img/carrot.jpeg" alt="gulerød">
-            <div class="image-text">Gulerød</div>
-        </div>
-        <div class="gallery-item" onclick="openModal('Caption 1')">
-            <img src="img/corriander.jpeg" alt="koriander">
-            <div class="image-text">Koriander</div>
-        </div>
-        <div class="gallery-item" onclick="openModal('Caption 1')">
-            <img src="img/carrot.jpeg" alt="gulerød">
-            <div class="image-text">Gulerød</div>
-        </div>
-        <div class="gallery-item">
-            <img src="img/corriander.jpeg" alt="Image 4">
-            <div class="image-text">Koriander</div>
-        </div>
-        <div class="gallery-item" onclick="openModal('Caption 1')">
-            <img src="img/carrot.jpeg" alt="gulerød">
-            <div class="image-text">Gulerød</div>
-        </div>
-        <div class="gallery-item">
-            <img src="img/corriander.jpeg" alt="Image 6">
-            <div class="image-text">Koriander</div>
-        </div>
-        <div class="gallery-item" onclick="openModal('Caption 1')">
-            <img src="img/carrot.jpeg" alt="gulerød">
-            <div class="image-text">Gulerød</div>
-        </div>
-        <div class="gallery-item">
-            <img src="img/corriander.jpeg" alt="Image 8">
-            <div class="image-text">Koriander</div>
-        </div>
-    </div>
-
-
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close-modal" onclick="closeModal()">&times;</span>
-                <p id="modalText"></p>
-            </div>
-        </div>
-    </div>
-
-
-
-
+<!-- Modal -->
+<div id="modal" class="modal">
+  <span id="close-modal" class="close">&times;</span>
+  <div id="modal-content"></div>
+</div>
       
 
 </body>
