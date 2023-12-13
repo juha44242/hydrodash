@@ -54,7 +54,7 @@ h1 {
     width:215px;
     position: fixed;
     left: 0;
-    top: 105px;
+    top: 0;
     height: 100%;
     background-color: var(--one-color);
 }
@@ -156,6 +156,8 @@ h1 {
     font-size: 1.1rem;
 }
 
+
+/*search bar*/
 .search-container {
     text-align: center;
     margin-left: 125px;
