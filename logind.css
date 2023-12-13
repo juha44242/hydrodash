@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Orgon';
+    src: url('Orgon-ExtraBold.otf') format('opentype'),
+         url('Orgon-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -58,6 +64,8 @@ form{
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size: 25px;
+	font-family: "orgon", sans-serif;
+
 
 }
 
@@ -132,7 +140,7 @@ form{
 	padding: 0.5rem 0.7rem;
 	font-size: 1.2rem;
 	color: #ffffff;
-	font-family: 'poppins', sans-serif;
+	font-family: "orgon", sans-serif;
 }
 
 .input-div.pass{
@@ -159,12 +167,11 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-image: linear-gradient(to right, #D7ead9, #D7ead9, #D7ead9);
 	background-size: 200%;
 	font-size: 1.2rem;
-	color: #fff;
-	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
+	color: #080707;
+	font-family: "orgon", sans-serif;
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: .5s;
