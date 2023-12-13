@@ -33,6 +33,7 @@ function sendMessage() {
         var currentProfile = document.getElementById('selectedProfile').innerText;
         addMessage('sent', messageText, currentProfile);
         messageInput.value = '';
+         console.log('Message sent:', messageText); 
         setTimeout(receiveMessage, 1000);
     }
 }
