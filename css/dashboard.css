@@ -101,19 +101,6 @@ h1 {
 }
 
 
-.container {
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    gap: 200px;
-}
-.chart {
-    padding: 2rem;
-    border: 1px solid #008559;
-    border-radius: 1rem;
-    background: #d7ead9;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-}
 
 .custom-ul {
     list-style-type: none;
@@ -186,3 +173,8 @@ h1 {
   .dropdown:hover .indicator {
     display: block;
   }
+
+ #chartcontainer {
+  padding-left: 250px;
+  padding-top: 60px;
+ }
