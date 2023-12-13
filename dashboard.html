@@ -176,6 +176,60 @@
     
     
         </main>
+
+        <div class="sheet-bar" id="sheetBar">
+            <button class="add-sheet" onclick="addSheet()">+</button>
+            <!-- Always show Sheet 1 on the right side of "Add Sheet" -->
+            <div class="sheet" onclick="switchSheet('Sheet 1')">Sheet 1</div>
+          </div>
+        
+          
+          <script>
+            let sheetCount = 2;
+            const contentPages = ['This is the content for Sheet 1'];
+          
+            function addSheet() {
+              const sheetBar = document.getElementById('sheetBar');
+              const newSheet = document.createElement('div');
+              newSheet.classList.add('sheet');
+              newSheet.textContent = `Sheet ${sheetCount}`;
+              newSheet.onclick = function() {
+                switchSheet(this.textContent);
+              };
+          
+              sheetBar.insertBefore(newSheet, sheetBar.lastChild);
+          
+              // Make the first sheet active by default
+              if (sheetCount === 1) {
+                switchSheet('Sheet 1');
+              }
+          
+              contentPages.push(`This is the content for ${newSheet.textContent}`);
+              sheetCount++;
+            }
+          
+            function switchSheet(sheetName) {
+              // Hide all content pages
+              const contentPagesElements = document.querySelectorAll('.content-page');
+              contentPagesElements.forEach(page => page.classList.remove('active-page'));
+          
+              // Find or create a new content page for the selected sheet
+              let contentPage = document.getElementById(`contentPage_${sheetName}`);
+              if (!contentPage) {
+                contentPage = document.createElement('div');
+                contentPage.classList.add('content-page', 'active-page');
+                contentPage.id = `contentPage_${sheetName}`;
+                contentPage.textContent = contentPages[sheetCount - 1];
+                document.getElementById('contentPages').appendChild(contentPage);
+              }
+          
+              // Display the content page
+              contentPage.classList.add('active-page');
+            }
+          </script>
+          
+          
+          
     
 
 </body>
