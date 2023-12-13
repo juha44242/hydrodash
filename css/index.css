@@ -35,7 +35,7 @@
          url('Orgon-Regular.ttf') format('truetype');
     font-weight: normal;
 }
-
+ /*front page*/
 header {
     background-color: var(--one-color);
     width: 100%;
@@ -155,7 +155,7 @@ h1 {
     margin: 5px;
     font-size: 1.1rem;
 }
-
+ /* end front page*/
 
 /*search bar*/
 .search-container {
