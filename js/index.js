@@ -21,7 +21,7 @@ function closeNav() {
     } 
     
     else {
-      greeting = "Good evening";
+      greeting = "Godaften";
     }
     
     document.getElementById("hallo").innerHTML = greeting + " Camilla Andersen";

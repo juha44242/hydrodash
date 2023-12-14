@@ -12,11 +12,9 @@
         <link rel="icon" type="image/x-icon" href="img/favicon.PNG">
     </head>
 <body>
-    <!-- Header -->
     <header>
         <h1><img src="img/headerlogo.png" width="275px" height="75px" alt="det er hydrovertics logo"></h1>
     </header>
-    <!-- End Header -->
     
     <div class="sidebar">
         <div class="sidebar-profil">
@@ -76,72 +74,92 @@
         
     <main>
 
-        <script>
+    <script>
             window.onload = function () {
             
             var chart = new CanvasJS.Chart("chartContainer", {
                 animationEnabled: true,
+                theme: "light2",
                 title:{
-                    text: "Omgivelserne "
-                },	
+                    text: "vand"
+                },
+                axisX:{
+                    valueFormatString: "DD MMM",
+                    crosshair: {
+                        enabled: true,
+                        snapToDataPoint: true
+                    }
+                },
                 axisY: {
-                    title: "Luftfugtighed",
-                    titleFontColor: "#4F81BC",
-                    lineColor: "#4F81BC",
-                    labelFontColor: "#4F81BC",
-                    tickColor: "#4F81BC"
+                    title: "Data fra Planter",
+                    includeZero: true,
+                    crosshair: {
+                        enabled: true
+                    }
                 },
-                axisY2: {
-                    title: "Kuldioxid",
-                    titleFontColor: "#C0504E",
-                    lineColor: "#C0504E",
-                    labelFontColor: "#C0504E",
-                    tickColor: "#C0504E"
-                },	
-                toolTip: {
-                    shared: true
-                },
-                legend: {
+                toolTip:{
+                    shared:true
+                },  
+                legend:{
                     cursor:"pointer",
-                    itemclick: toggleDataSeries
+                    verticalAlign: "bottom",
+                    horizontalAlign: "left",
+                    dockInsidePlotArea: true,
+                    itemclick: toogleDataSeries
                 },
                 data: [{
-                    type: "column",
-                    name: "Luftfugtighed (%)",
-                    legendText: "Luftfugtighed",
-                    showInLegend: true, 
-                    dataPoints:[
-                        { label: "Basilkum", y: 266.21 },
-                        { label: "Gulerodder", y: 302.25 },
-                        { label: "Koriander", y: 157.20 },
-                        { label: "Persille", y: 148.77 },
-                        { label: "Salat", y: 101.50 },
-                        { label: "Timian", y: 97.8 }
+                    type: "line",
+                    showInLegend: true,
+                    name: "vands PH",
+                    markerType: "square",
+                    xValueFormatString: "DD MMM, YYYY",
+                    color: "#008559",
+                    dataPoints: [
+                        { x: new Date(2017, 0, 3), y: 650 },
+                        { x: new Date(2017, 0, 4), y: 700 },
+                        { x: new Date(2017, 0, 5), y: 710 },
+                        { x: new Date(2017, 0, 6), y: 658 },
+                        { x: new Date(2017, 0, 7), y: 734 },
+                        { x: new Date(2017, 0, 8), y: 963 },
+                        { x: new Date(2017, 0, 9), y: 847 },
+                        { x: new Date(2017, 0, 10), y: 853 },
+                        { x: new Date(2017, 0, 11), y: 869 },
+                        { x: new Date(2017, 0, 12), y: 943 },
+                        { x: new Date(2017, 0, 13), y: 970 },
+                        { x: new Date(2017, 0, 14), y: 869 },
+                        { x: new Date(2017, 0, 15), y: 890 },
+                        { x: new Date(2017, 0, 16), y: 930 }
                     ]
                 },
                 {
-                    type: "column",	
-                    name: "Kuldioxid (%)",
-                    legendText: "Kuldioxid",
-                    axisYType: "secondary",
+                    type: "line",
                     showInLegend: true,
-                    dataPoints:[
-                        { label: "Basilikum", y: 10.46 },
-                        { label: "Gulerodder", y: 2.27 },
-                        { label: "Koriander", y: 3.99 },
-                        { label: "Persille", y: 4.45 },
-                        { label: "Salat", y: 2.92 },
-                        { label: "Timian", y: 3.1 }
+                    name: "vandsledningevne",
+                    lineDashType: "dash",
+                    dataPoints: [
+                        { x: new Date(2017, 0, 3), y: 510 },
+                        { x: new Date(2017, 0, 4), y: 560 },
+                        { x: new Date(2017, 0, 5), y: 540 },
+                        { x: new Date(2017, 0, 6), y: 558 },
+                        { x: new Date(2017, 0, 7), y: 544 },
+                        { x: new Date(2017, 0, 8), y: 693 },
+                        { x: new Date(2017, 0, 9), y: 657 },
+                        { x: new Date(2017, 0, 10), y: 663 },
+                        { x: new Date(2017, 0, 11), y: 639 },
+                        { x: new Date(2017, 0, 12), y: 673 },
+                        { x: new Date(2017, 0, 13), y: 660 },
+                        { x: new Date(2017, 0, 14), y: 562 },
+                        { x: new Date(2017, 0, 15), y: 643 },
+                        { x: new Date(2017, 0, 16), y: 570 }
                     ]
                 }]
             });
             chart.render();
             
-            function toggleDataSeries(e) {
+            function toogleDataSeries(e){
                 if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
                     e.dataSeries.visible = false;
-                }
-                else {
+                } else{
                     e.dataSeries.visible = true;
                 }
                 chart.render();
@@ -149,11 +167,7 @@
             
             }
             </script>
-
             <div id="chartContainer" style="height: 370px; width: 50%;"></div>
-            <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-    
-    </main>
-
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 </body>
 </html>
