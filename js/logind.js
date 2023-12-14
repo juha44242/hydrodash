@@ -22,7 +22,7 @@ function handleLogin() {
     var password = document.getElementById('passwordInput').value;
 
     // Et eksempel på brug af en array
-    const allowedEmails = ["tiyam@gmail.com", "hamdi@gmail.com", "lina@gmail.com"];
+    const allowedEmails = ["tiyam@gmail.com", "hamdi@gmail.com", "lina@gmail.com", "demo",];
 
     // Et eksempel på brug af en løkke
     let erFundet = false;
@@ -37,6 +37,7 @@ function handleLogin() {
     if (erFundet) {
         // Vis besked om succesfuld login
         alert('Du er logget ind!');
+        window.location.href = "index.html";
     } else {
         // Vis besked om fejlet login
         alert('Forkert brugernavn eller kodeord.');

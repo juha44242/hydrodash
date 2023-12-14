@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link rel="stylesheet" href="css/dashboard.css">
-        <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"><link rel="stylesheet" href="css/chart.css">
         <script src="js/index.js" defer></script>
         <script> src="js/dashboard.js"</script> 
         <title>Hydrovertic-dashboard</title>
@@ -38,6 +37,36 @@
 
                 <li>
                     <a href="besked.html"><span class="las la-envelope"></span><span>Beskeder</span></a>
+                </li>
+
+                <li>
+                    <a href="logind.html"><span class="las la-door-open"></span><span>Log ud</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mobilmenu">
+        <div class="mobilmenu-menu">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="las la-home"></span><span>Forside</span></a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html" class="active"><span class="las la-digital-tachograph"></span><span>Dashboard</span></a>
+                </li>
+
+                <li>
+                    <a href="plantebib.html"><span class="las la-book-reader"></span><span>Plante Bibliotek</span></a>
+                </li>
+
+                <li>
+                    <a href="besked.html"><span class="las la-envelope"></span><span>Beskeder</span></a>
+                </li>
+
+                <li>
+                    <a href="logind.html"><span class="las la-door-open"></span><span>Log ud</span></a>
                 </li>
             </ul>
         </div>
@@ -150,26 +179,26 @@
             }
             </script>
 
-            <div id="chartContainer" style="height: 370px; width: 50%;"></div>
+            <div id="chartContainer" style="height: 370px; width: 80%;"></div>
             <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
     
     </main>
 
-    <form action="">
+    <form class="tjekliste">
         <input type="checkbox" id="luftfugtighed" name="luftfugtighed">
-        <label for="luftfugtighed">Luftfugtighed</label><br>
+        <label for="luftfugtighed">Luftfugtighed</label>
     
         <input type="checkbox" id="kuldioxid" name="kuldioxid">
-        <label for="kuldioxid">Kuldioxid</label><br>
+        <label for="kuldioxid">Kuldioxid</label>
     
         <input type="checkbox" id="vands-ledningsevne" name="vands-ledningsevne">
-        <label for="kuldioxid">Kuldioxid</label><br>
+        <label for="kuldioxid">Kuldioxid</label>
     
         <input type="checkbox" id="vands-ph" name="vands-ph">
-        <label for="vands-ph">Vands PH</label><br>
+        <label for="vands-ph">Vands PH</label>
     
         <input type="checkbox" id="stroem" name="stroem">
-        <label for="stroem">Strøm</label><br>
+        <label for="stroem">Strøm</label>
     </form>
 
 

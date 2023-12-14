@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       text: "Rosemarin"
     },
     {
-      image: "img/blomkål.jpg",
+      image: "img/blomkaal.jpg",
       text: "Blomkål"
     },
     {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       text: "Chili"
     },
     {
-      image: "img/hindbær.jpg",
+      image: "img/hindbaer.jpg",
       text: "Hindbær"
     },
     {
