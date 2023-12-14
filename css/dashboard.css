@@ -180,6 +180,24 @@ h1 {
  }
 
 
+ form {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15%;
+}
+
+label {
+  margin-left: 5px; /* Adjust this value to your preference */
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+      margin-left: 0;
+  }
+}
+
+
+
  .sheet-bar {
   background-color: var(--one-color);
   display: flex;

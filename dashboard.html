@@ -155,16 +155,31 @@
     
     </main>
 
+    <form action="">
+        <input type="checkbox" id="luftfugtighed" name="luftfugtighed">
+        <label for="luftfugtighed">Luftfugtighed</label><br>
+    
+        <input type="checkbox" id="kuldioxid" name="kuldioxid">
+        <label for="kuldioxid">Kuldioxid</label><br>
+    
+        <input type="checkbox" id="vands-ledningsevne" name="vands-ledningsevne">
+        <label for="kuldioxid">Kuldioxid</label><br>
+    
+        <input type="checkbox" id="vands-ph" name="vands-ph">
+        <label for="vands-ph">Vands PH</label><br>
+    
+        <input type="checkbox" id="stroem" name="stroem">
+        <label for="stroem">Strøm</label><br>
+    </form>
+
+
      <!-- sheet bar -->
     <div class="sheet-bar" id="sheetBar">
         <button class="add-sheet" onclick="addSheet()">+</button>
         <!-- Always show Sheet 1 on the right side of "Add Sheet" -->
         <div class="sheet" onclick="switchSheet('Sheet 1')">Sheet 1</div>
     </div>
+
     
-    <div id="contentPages">
-        <!-- Initial content page for Sheet 1 -->
-        <div class="content-page active-page">This is the content for Sheet 1</div>
-    </div>
 </body>
 </html>
