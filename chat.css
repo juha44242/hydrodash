@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Orgon';
-    src: url('Orgon-ExtraBold.otf') format('opentype'),
-         url('Orgon-ExtraBold.ttf') format('truetype');
-    font-weight: 800; 
+    src: url('Orgon-regular.ttf');
 }
 
 

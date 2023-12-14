@@ -50,7 +50,10 @@ body {
     cursor: pointer;
   }
   
+  
 
   @media screen and (max-width: 768px) {
     .item {
-      flex-basis: calc(50% - 20px); /* 50% width on screens <= 768px
+        flex-basis: calc(50% - 20px); /* 50% width on screens <= 768px */
+    }
+}
