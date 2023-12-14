@@ -5,36 +5,36 @@ document.addEventListener("DOMContentLoaded", function() {
   // List of items with pictures and text
   const items = [
     {
-      image: "img/corriander.jpeg",
-      text: "Korianderpleje Tips"
+      image: "img/koriander.jpeg",
+      text: "Koriander"
     },
     {
       image: "img/carrot.jpeg",
-      text: "Item 2 Description"
+      text: "Gulerød"
     },
     {
-      image: "img/carrot.jpeg",
-      text: "Item 3 Description"
+      image: "img/rosemarin.jpeg",
+      text: "Rosemarin"
     },
     {
-      image: "img/carrot.jpeg",
-      text: "Item 4 Description"
+      image: "img/blomkål.jpg",
+      text: "Blomkål"
     },
     {
-      image: "img/carrot.jpeg",
-      text: "Item 5 Description"
+      image: "img/chili.jpg",
+      text: "Chili"
     },
     {
-      image: "img/carrot.jpeg",
-      text: "Item 6 Description"
+      image: "img/hindbær.jpg",
+      text: "Hindbær"
     },
     {
-      image: "img/carrot.jpeg",
-      text: "Item 7 Description"
+      image: "img/spinat.jpeg",
+      text: "Spinat"
     },
     {
-      image: "img/carrot.jpeg",
-      text: "Item 8 Description"
+      image: "img/tomat.JPEG",
+      text: "Tomat"
     }
   ];
 
