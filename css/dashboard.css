@@ -266,6 +266,7 @@ display: block;
   .mobilmenu {
     display:flex;
     background-color:#008559;
+    font-family: "orgon" , sans-serif;
   }
   .mobilmenu-menu li {
     display:inline;
