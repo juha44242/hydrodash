@@ -12,7 +12,7 @@ body {
 .contacts {
     display: flex;
     flex-direction: column;
-    background-color:#39835D; 
+    background-color:#008559; 
     color: #fff;
     padding: 20px;
     width: auto;
@@ -45,7 +45,7 @@ body {
     overflow: hidden;
 }
 .chat-header {
-    background-color: #075e54;
+    background-color: #008559;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -63,7 +63,7 @@ body {
     overflow: hidden;
 }
 .sent {
-    background-color: #D8EAD9; 
+    background-color: #D7ead9;
     color: #000;
     text-align: right;
 }
@@ -96,8 +96,8 @@ body {
     border-radius: 5px;
 }
 .chat-input button {
-    background-color: #075e54;
-    color: #D8EAD9;
+    background-color: #008559;
+    color: #D7ead9;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
