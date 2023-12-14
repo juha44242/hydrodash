@@ -179,3 +179,50 @@ h1 {
   padding-top: 50px;
  }
 
+
+ .sheet-bar {
+  background-color: var(--one-color);
+  display: flex;
+  overflow-x: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+ left: 40%;
+}
+
+.sheet {
+  background-color: var(--two-color);
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  font-family: "orgon", sans-serif;
+}
+
+.sheet:hover {
+  background-color:var(--three-color);
+}
+
+.add-sheet {
+  background-color: var(--one-color);
+  border-radius: 0; 
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  font-family: "orgon", sans-serif;
+}
+
+
+.content-page {
+  display: none;
+  padding: 20px;
+  font-family: "orgon", sans-serif;
+}
+
+.active-page {
+  display: block;
+}

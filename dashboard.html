@@ -155,5 +155,16 @@
     
     </main>
 
+     <!-- sheet bar -->
+    <div class="sheet-bar" id="sheetBar">
+        <button class="add-sheet" onclick="addSheet()">+</button>
+        <!-- Always show Sheet 1 on the right side of "Add Sheet" -->
+        <div class="sheet" onclick="switchSheet('Sheet 1')">Sheet 1</div>
+    </div>
+    
+    <div id="contentPages">
+        <!-- Initial content page for Sheet 1 -->
+        <div class="content-page active-page">This is the content for Sheet 1</div>
+    </div>
 </body>
 </html>
