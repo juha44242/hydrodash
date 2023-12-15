@@ -1,7 +1,6 @@
-
-var chatMessagesArray = [];
-var profiles = ['Jakob', 'Iris', 'Philip', 'Jane'];
-var maxMessages = 50; 
+let chatMessagesArray = [];
+let profiles = ['Jakob', 'Iris', 'Philip', 'Jane'];
+let maxMessages = 50;
 
 function selectProfile(profileName) {
     document.getElementById('selectedProfile').innerText = profileName;
